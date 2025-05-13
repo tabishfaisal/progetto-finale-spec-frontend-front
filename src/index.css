@@ -1,0 +1,363 @@
+/*body style */
+.body {
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  background-color: #e4e4e4;
+}
+
+/*header style */
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.li:active{
+  border-bottom: 2px solid white;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: #007bff;
+  color: white;
+  align-items: center;
+}
+
+h1:hover {
+  color: #0056b3;
+}
+
+/*main section style */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.search-form {
+  width: 800px;
+  margin: 30px auto;
+}
+
+.search-icon {
+  font-size: 36px;
+  padding: 3px;
+  opacity: 75%;
+}
+
+input {
+  width: 80%;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 3px 3px 3px white;
+  font-size: 24px;
+
+}
+.select-order{
+  margin: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+.select-category{
+  margin: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.not-found {
+  text-align: center;
+  font-size: 24px;
+}
+
+.row {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  height: 180px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.row:hover {
+  transform: translateY(-4px);
+}
+
+.row h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.row a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.row a:hover {
+  text-decoration: underline;
+}
+
+.row p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.row button {
+  background-color: #007bff;
+  width: 150px;
+  color: white;
+  padding: 5px;
+  height: 32px;
+  margin: 3px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.row button:hover {
+  background-color: #0056b3;
+}
+
+/* wishlist style */
+
+.wishlist-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wishlist-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.wishlist-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.wishlist-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.wishlist-card h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.wishlist-card p {
+  margin: 0.25rem 0;
+  color: #555;
+}
+
+/* detial laptop style */
+
+.laptop-detail {
+  max-width: 400px;
+  height: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.laptop-detail h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.laptop-detail p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.laptop-detail button {
+  background-color: #007bff;
+  width: 150px;
+  color: white;
+  height: 35px;
+  margin: 5px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.laptop-detail button:hover {
+  background-color: #0056b3;
+}
+
+.remove-btn {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.remove-btn:hover {
+  background-color: #0056b3;
+}
+
+/*comparison style page */
+
+select{
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px whitesmoke;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.camparison h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.camparison-p{
+  margin: 0.25rem 0;
+  color: #555;
+}
+.select-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+.compare-detial{
+  max-width: 400px;
+  height: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.compare-card {
+  flex: 1 1 300px;
+  max-width: 400px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fefefe;
+  transition: transform 0.2s ease;
+}
+
+.compare-card:hover {
+  transform: scale(1.02);
+}
+
+.category {
+  background-color: #e0e0e0;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.compare-container{
+  display: flex;
+  max-width: 1024px;
+  margin: 20px auto;
+  justify-content: space-around;
+  gap: 20px;
+
+}
+.compare-detail {
+  width: 45%;
+  height: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.compare-detail h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.compare-detail p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.compare-detail button {
+  background-color: #007bff;
+  width: 150px;
+  color: white;
+  height: 35px;
+  margin: 5px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.compare-detail button:hover {
+  background-color: #0056b3;
+}
