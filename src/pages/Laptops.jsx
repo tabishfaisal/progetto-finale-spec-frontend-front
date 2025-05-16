@@ -8,7 +8,13 @@ const Laptops = () => {
   const [sortOrder, setSortOrder] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
 
-  const categories = ['gaming', 'budget', 'ultrabook', 'convertible', 'business'];
+  const categories = [];
+  laptops.forEach(l => {
+  if (!categories.includes(l.category)) {
+    categories.push(l.category);
+  }
+  });
+
 
   const handleSearchBar = (query) => {
     setSearchQuery(query);
