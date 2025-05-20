@@ -6,30 +6,12 @@ const Url = import.meta.env.VITE_API_URL;
 
 const Comparison = () => {
   const { laptops, handleFavorite } = useContext(GlobalContext);
+
   const [selectLeft, setSelectLeft] = useState("");
   const [selectRight, setSelectRight] = useState("");
 
   const [leftLaptopInfo, setLeftLaptopInfo] = useState([]);
   const [rightLaptopInfo, setRightLaptopInfo] = useState([]);
-
-
-  useEffect(() => {
-    if (!selectLeft) return;
-
-    axios.get(`${Url}/laptops/${selectLeft}`)
-      .then((res) => setLeftLaptopInfo([res.data.laptop]))
-      .catch((error) => console.error("Error fetching left laptop:", error));
-  }, [selectLeft]);
-
-
-  useEffect(() => {
-    if (!selectRight) return;
-
-    axios.get(`${Url}/laptops/${selectRight}`)
-      .then((res) => setRightLaptopInfo([res.data.laptop]))
-      .catch((error) => console.error("Error fetching right laptop:", error));
-  }, [selectRight]);
-
 
   const handleLeftChange = (e) => {
     const value = e.target.value;
@@ -48,6 +30,24 @@ const Comparison = () => {
       alert('You cannot select the same laptop in both sides.');
     }
   };
+
+  useEffect(() => {
+    if (!selectLeft) return;
+
+    axios.get(`${Url}/laptops/${selectLeft}`)
+      .then((res) => setLeftLaptopInfo([res.data.laptop]))
+      .catch((error) => console.error("Error fetching left laptop:", error));
+  }, [selectLeft]);
+
+
+  useEffect(() => {
+    if (!selectRight) return;
+
+    axios.get(`${Url}/laptops/${selectRight}`)
+      .then((res) => setRightLaptopInfo([res.data.laptop]))
+      .catch((error) => console.error("Error fetching right laptop:", error));
+  }, [selectRight]);
+
 
   return (
     <div>

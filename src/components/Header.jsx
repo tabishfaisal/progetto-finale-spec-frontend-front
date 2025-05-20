@@ -6,7 +6,7 @@ const Header = () => {
         <Link to={'/'}><h1>BooleanStore</h1></Link>
         <ul>
            <Link to={'/favorite'}><li className='li'>WishList ♡</li></Link>
-           <Link to={'/comparison'}><li className='li'>Camprison</li></Link>
+           <Link to={'/comparison'}><li className='li'>Comparison</li></Link>
         </ul>
       </nav>
   )

@@ -18,6 +18,7 @@ const Laptops = () => {
 
   const handleSearchBar = (query) => {
     setSearchQuery(query);
+    
   };
 
   const handleSortChange = (e) => {

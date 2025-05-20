@@ -7,6 +7,7 @@
   flex-direction: column;
   padding: 0;
   background-color: #e4e4e4;
+  font-family: Arial, sans-serif;
 }
 
 /*header style */
@@ -257,7 +258,8 @@ select{
   border-radius: 10px;
   box-shadow: 3px 3px 3px whitesmoke;
   border: none;
-  font-weight: bold;
+  color: rgb(51, 51, 51);
+  font-weight: 700;
   cursor: pointer;
 }
 
@@ -327,7 +329,6 @@ select{
   background-color: #fdfdfd;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
   line-height: 1.6;
 }
 

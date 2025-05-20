@@ -6,7 +6,14 @@ export const GlobalContext = createContext();
 
 const GlobalProvider = ({ children }) => {
   const [laptops, setLaptops] = useState([]);
-  const [favorites, setFavorites] = useState([]);
+  const [favorites, setFavorites] = useState(()=>{
+    const storedFavorites = localStorage.getItem('favorites');
+    return storedFavorites ? JSON.parse(storedFavorites) : []
+  });
+
+  useEffect(()=>{
+    localStorage.setItem('favorites',JSON.stringify(favorites))
+  },[favorites])
 
   useEffect(() => {
     const fetchLaptops = async () => {
